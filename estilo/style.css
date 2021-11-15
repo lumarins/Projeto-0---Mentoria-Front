@@ -1,0 +1,152 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Patrick+Hand&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css");
+
+* {
+	font-family: 'Patrick Hand', cursive;
+}
+
+#menu {
+	background-color: #82a1c2;
+	color: #333;
+}
+
+#conteudo, #galeria, #redes-sociais{
+	margin-top: 7%;
+}
+
+#body {
+	background-color: #e3e3e1;
+}
+
+.container-galeria {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	gap: 2vw;
+	padding: 0 1vw;
+}
+
+.item-galeria {
+	width: 340px;
+	height: 340px;
+	/*borda orgulho*/
+	border: 8px solid transparent;
+	border-image: linear-gradient(
+		to bottom,
+		#333,
+		#333 12.5%,
+		#a68558 12.5%,
+		#a68558 25%,
+		#ba5d5d 25%,
+		#ba5d5d 37.5%,
+		#bf9663 37.5%,
+		#bf9663 50%,
+		#d4ce7d 50%,
+		#d4ce7d 62.5%,
+		#78c28e 62.5%,
+		#78c28e 75%,
+		#7a90c4 75%,
+		#7a90c4 87.5%,
+		#c68fcf 87.5%,
+		#c68fcf 100%
+		);
+
+	-webkit-border-image: -webkit-linear-gradient(to bottom,
+		#333,
+		#333 12.5%,
+		#a68558 12.5%,
+		#a68558 25%,
+		#ba5d5d 25%,
+		#ba5d5d 37.5%,
+		#bf9663 37.5%,
+		#bf9663 50%,
+		#d4ce7d 50%,
+		#d4ce7d 62.5%,
+		#78c28e 62.5%,
+		#78c28e 75%,
+		#7a90c4 75%,
+		#7a90c4 87.5%,
+		#c68fcf 87.5%,
+		#c68fcf 100%
+		);
+
+	border-image-slice: 1;
+}
+
+.item-galeria .img-galeria {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.item-galeria .title-galeria {
+	position: relative;
+	background-color: rgba(0,0,0,0.8);
+	color: #fff;
+	left: 0;
+	bottom: 31px;
+	padding: 10px;
+	font-size: 14px;
+	width: 100%;
+}
+
+#redes-sociais {
+	text-align: right;
+}
+#contato{
+	text-align: left;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: right;
+  padding: 3px;
+  background-color: #343a40;
+  color: white;
+}
+
+/* redes sociais */
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-github {
+  background: #222;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #ab5b88;
+  color: white;
+}
+
+@media(max-width: 768px){
+	#redes-sociais {
+		text-align: left;
+	}
+	#contato{
+		margin-top: 5%;
+	}
+}
